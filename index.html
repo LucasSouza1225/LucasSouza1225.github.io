@@ -8,7 +8,9 @@
 </head>
 <body>
 <script src=https://webchat.hyperflow.global/sdk.js></script>
-<script>Hyperflow.init("ec331e10f85d4f98c922aaa64c7bc7b8")</script>{ 
+<script>
+Hyperflow.init("ec331e10f85d4f98c922aaa64c7bc7b8").on("getStarted", () => {
+    Hyperflow.initFlow('o1vgku6ca', { 
         url: window.location.href
     });
 });
